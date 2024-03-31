@@ -1,14 +1,7 @@
-﻿using AspNetCoreCrudUsingStoredProcedures.Data;
-using AspNetCoreCrudUsingStoredProcedures.Models;
-using Microsoft.AspNetCore.Http.HttpResults;
+﻿using AspNetCoreCrudUsingStoredProcedures.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Data.SqlClient;
-using Microsoft.EntityFrameworkCore;
 using System.Data;
-using static System.Reflection.Metadata.BlobBuilder;
-using System.Net;
-using System.Collections.Generic;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
+using System.Data.SqlClient;
 
 namespace AspNetCoreCrudUsingStoredProcedures.Controllers
 {
