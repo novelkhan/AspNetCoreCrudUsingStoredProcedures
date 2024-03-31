@@ -2,8 +2,8 @@
 using Microsoft.Extensions.DependencyInjection;
 using AspNetCoreCrudUsingStoredProcedures.Data;
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("ApplicationDbContext") ?? throw new InvalidOperationException("Connection string 'ApplicationDbContext' not found.")));
+
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
