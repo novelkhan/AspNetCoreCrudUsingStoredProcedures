@@ -1,4 +1,5 @@
 ﻿using AspNetCoreCrudUsingStoredProcedures.Models;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using System.Data;
 using System.Data.SqlClient;
@@ -17,17 +18,14 @@ namespace AspNetCoreCrudUsingStoredProcedures.Controllers
 
 
         ////---------------------------------SQL Code To Create Database---------------------------------
-        //CREATE PROCEDURE[dbo].[AddBook]
-        //    @title varchar(100),
-        //    @author varchar(100),
-        //    @price int
-        //AS
-        //BEGIN
-        //    set nocount on;
-        //    insert into Books(title, author, price)
-        //    values(@title, @author, @price)
-        //END
-        //GO
+        //CREATE TABLE[dbo].[Books]
+        //(
+        //    [bookId] INT          IDENTITY(1, 1) NOT NULL,
+        //    [title]  VARCHAR(100) NOT NULL,
+        //    [author] VARCHAR(100) NOT NULL,
+        //    [price]  INT NOT NULL,
+        //    PRIMARY KEY CLUSTERED([bookId] ASC)
+        //);
         ////---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxx-------------------------------------
 
 
